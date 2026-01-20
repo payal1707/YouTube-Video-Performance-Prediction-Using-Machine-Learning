@@ -93,7 +93,7 @@ with tab1:
 
 with tab1:
     st.subheader("🔗 Real-Time YouTube Prediction")
-   video_url = st.text_input(
+    video_url = st.text_input(
     "Enter YouTube Video URL",
     key="video_url_realtime"
 )
@@ -210,4 +210,5 @@ st.markdown(
     "🎓 **Project Type:** Internship-Ready Machine Learning Dashboard"
 
 )
+
 
