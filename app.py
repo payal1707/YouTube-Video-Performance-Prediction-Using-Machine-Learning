@@ -81,6 +81,16 @@ comments = st.sidebar.number_input("💬 Comments", min_value=0, step=5)
 duration = st.sidebar.number_input("⏱ Duration (minutes)", min_value=0.0, step=0.5)
 upload_hour = st.sidebar.slider("🕒 Upload Hour", 0, 23)
 
+# -------- TABS --------
+tab1, tab2 = st.tabs(["📡 Real-Time Prediction", "📊 Model Prediction"])
+
+with tab1:
+    st.subheader("🔗 Real-Time YouTube Prediction")
+    video_url = st.text_input("Enter YouTube Video URL (for live prediction)")
+
+    if st.button("Predict Real-Time Video"):
+        ...
+
 with tab1:
     st.subheader("🔗 Real-Time YouTube Prediction")
     video_url = st.text_input("Enter YouTube Video URL (for live prediction)")
@@ -195,4 +205,5 @@ st.markdown("---")
 st.markdown(
     "💡 **Technologies Used:** Python | Pandas | NumPy | Scikit-learn | Streamlit  \n"
     "🎓 **Project Type:** Internship-Ready Machine Learning Dashboard"
+
 )
