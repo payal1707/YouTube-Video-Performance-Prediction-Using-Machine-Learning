@@ -93,9 +93,12 @@ with tab1:
 
 with tab1:
     st.subheader("🔗 Real-Time YouTube Prediction")
-    video_url = st.text_input("Enter YouTube Video URL (for live prediction)")
+   video_url = st.text_input(
+    "Enter YouTube Video URL",
+    key="video_url_realtime"
+)
 
-    if st.button("Predict Real-Time Video"):
+    if st.button("Predict", key="predict_realtime"):
         if video_url.strip() == "":
             st.warning("⚠️ Please enter a valid YouTube video URL")
         else:
@@ -207,3 +210,4 @@ st.markdown(
     "🎓 **Project Type:** Internship-Ready Machine Learning Dashboard"
 
 )
+
